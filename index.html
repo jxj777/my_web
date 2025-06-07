@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">我的空间</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle" id="themeToggle">
+                <span class="theme-icon">🌙</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主内容 -->
+    <main class="main">
+        <!-- 首页英雄区域 -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="title-main">Developer💻</span>
+                            <span class="title-main">Designer 📷</span> 
+                            <span class="title-main">& Creator ✨</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            专注于创造有意义的数字体验<br>
+                            Passionate about crafting meaningful digital experiences
+                        </p>
+                        <div class="hero-quote">
+                            <blockquote>
+                                "设计不仅仅是看起来如何和感觉如何，<br>设计是如何运作的。"
+                                <cite>— Steve Jobs</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="visual-grid">
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-hint">
+                    <span>向下滚动探索更多</span>
+                    <div class="scroll-arrow"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 关于区域 -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-main">
+                        <h2 class="section-title">About Me</h2>
+                        <div class="about-text">
+                            <p class="intro-text">
+                                我是一个<strong>全栈开发者</strong>，同时也是一个<strong>UI/UX设计师</strong>。
+                            </p>
+                            <p>
+                                热爱在技术与艺术的交汇点创造美好的事物。相信优秀的产品应该既有强大的功能，
+                                又有优雅的体验。在代码的世界里寻找设计的美学，在设计的过程中思考技术的可能。
+                            </p>
+                            <p>
+                                专注于前端技术、用户体验设计，以及如何让技术更好地服务于人。
+                            </p>
+                        </div>
+                        
+                        <div class="skills-section">
+                            <h3>技能领域</h3>
+                            <div class="skills-grid">
+                                <div class="skill-category">
+                                    <h4>开发</h4>
+                                    <div class="skill-tags">
+                                        <span>JavaScript</span>
+                                        <span>TypeScript</span>
+                                        <span>React</span>
+                                        <span>Vue.js</span>
+                                        <span>Node.js</span>
+                                    </div>
+                                </div>
+                                <div class="skill-category">
+                                    <h4>设计</h4>
+                                    <div class="skill-tags">
+                                        <span>UI/UX</span>
+                                        <span>Figma</span>
+                                        <span>Adobe XD</span>
+                                        <span>Sketch</span>
+                                        <span>Principle</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-sidebar">
+                        <div class="info-card">
+                            <div class="info-item">
+                                <span class="info-label">位置</span>
+                                <span class="info-value">山东，青岛</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">状态</span>
+                                <span class="info-value">可合作</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">兴趣</span>
+                                <span class="info-value">设计，编程，摄影</span>
+                            </div>
+                        </div>
+                        
+                        <div class="stats-card">
+                            <div class="stat">
+                                <div class="stat-number">3+</div>
+                                <div class="stat-label">年经验</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">50+</div>
+                                <div class="stat-label">项目</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">∞</div>
+                                <div class="stat-label">创意</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 项目作品区域 -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Selected Works</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-number">01</div>
+                        <div class="project-content">
+                            <h3 class="project-title">个人工具集</h3>
+                            <p class="project-desc">
+                                开发了一系列提高日常效率的小工具，包括起始页、时间管理工具、
+                                代码片段管理器等。注重简洁的界面设计和流畅的用户体验。
+                            </p>
+                            <div class="project-tech">
+                                <span>JavaScript</span>
+                                <span>CSS3</span>
+                                <span>LocalStorage</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">查看详情 →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-number">02</div>
+                        <div class="project-content">
+                            <h3 class="project-title">UI设计系统</h3>
+                            <p class="project-desc">
+                                为中小型团队设计的轻量级设计系统，包含完整的组件库、
+                                设计原则和使用指南。帮助团队提高设计和开发效率。
+                            </p>
+                            <div class="project-tech">
+                                <span>Figma</span>
+                                <span>Design System</span>
+                                <span>Component Library</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">查看详情 →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-number">03</div>
+                        <div class="project-content">
+                            <h3 class="project-title">博客平台</h3>
+                            <p class="project-desc">
+                                极简风格的个人博客平台，专注于内容展示和阅读体验。
+                                支持Markdown编辑、标签分类、全文搜索等功能。
+                            </p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">查看详情 →</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系区域 -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-main">
+                        <h2 class="section-title">Let's Connect</h2>
+                        <p class="contact-intro">
+                            有想法想要交流？或者想要合作？<br>
+                            随时欢迎与我联系。
+                        </p>
+                    </div>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:your.email@example.com" class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-info">
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">your.email@example.com</div>
+                            </div>
+                        </a>
+                        
+                        <a href="#" class="contact-item">
+                            <div class="contact-icon">💬</div>
+                            <div class="contact-info">
+                                <div class="contact-label">微信</div>
+                                <div class="contact-value">WeChat ID</div>
+                            </div>
+                        </a>
+                        
+                        <a href="#" class="contact-item">
+                            <div class="contact-icon">🐙</div>
+                            <div class="contact-info">
+                                <div class="contact-label">GitHub</div>
+                                <div class="contact-value">@yourusername</div>
+                            </div>
+                        </a>
+                        
+                        <a href="#" class="contact-item">
+                            <div class="contact-icon">🎨</div>
+                            <div class="contact-info">
+                                <div class="contact-label">Dribbble</div>
+                                <div class="contact-value">@yourusername</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 我的个人空间. 用心创造每一个细节.</p>
+                <div class="footer-note">
+                    <span>Made with ❤️ and lots of ☕</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
